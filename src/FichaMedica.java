@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,8 +7,8 @@ public class FichaMedica {
 
 
 
-    public void addDiagnostico(Diagnostico diagnostico){
+    public void addDiagnostico(String desripcion, LocalDate fecha){
         if (diagnosticos == null) diagnosticos = new ArrayList<>();
-        diagnosticos.add(new Diagnostico());
+        diagnosticos.add(new Diagnostico(desripcion, fecha));
     }
 }
